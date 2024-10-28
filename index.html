@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Identitas Mahasiswa</title>
+    <!-- Link CSS Bootstrap -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Tambahkan CSS agar teks dalam tabel dan input berada di tengah */
+        .table thead th, .table tbody td {
+            text-align: center;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5" style="max-width: 800px;">
+    <h2 class="text-center">Formulir Identitas Mahasiswa</h2>
+    <form action="/submit-identitas" method="post">
+        <table class="table table-bordered">
+            <thead class="thead-dark">
+                <tr>
+                    <th>No</th>
+                    <th>Nama Mahasiswa</th>
+                    <th>NIM</th>
+                    <th>Program Studi</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><input type="text" name="nama_mahasiswa[]" class="form-control text-center" placeholder="Masukkan Nama Mahasiswa"></td>
+                    <td><input type="text" name="nim[]" class="form-control text-center" placeholder="Masukkan NIM"></td>
+                    <td>
+                        <select name="program_studi[]" class="form-control text-center">
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                            <option value="Manajemen Retail">Manajemen Retail</option>
+                            <option value="Bisnis Digital">Bisnis Digital</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><input type="text" name="nama_mahasiswa[]" class="form-control text-center" placeholder="Masukkan Nama Mahasiswa"></td>
+                    <td><input type="text" name="nim[]" class="form-control text-center" placeholder="Masukkan NIM"></td>
+                    <td>
+                        <select name="program_studi[]" class="form-control text-center">
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                            <option value="Manajemen Retail">Manajemen Retail</option>
+                            <option value="Bisnis Digital">Bisnis Digital</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><input type="text" name="nama_mahasiswa[]" class="form-control text-center" placeholder="Masukkan Nama Mahasiswa"></td>
+                    <td><input type="text" name="nim[]" class="form-control text-center" placeholder="Masukkan NIM"></td>
+                    <td>
+                        <select name="program_studi[]" class="form-control text-center">
+                            <option value="">Pilih Program Studi</option>
+                            <option value="Teknik Informatika">Teknik Informatika</option>
+                            <option value="Teknik Industri">Teknik Industri</option>
+                            <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+                            <option value="Manajemen Retail">Manajemen Retail</option>
+                            <option value="Bisnis Digital">Bisnis Digital</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+
+<!-- Script Bootstrap -->
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
